@@ -1,0 +1,24 @@
+MoinMoin - websequencediagram
+
+This moinmoin  parser plugin creates a sequence diagram using a WebSequenceDiagram server, using the API described at http://www.websequencediagrams.com/embedding.html
+
+Currently it only supports a single style (qsd) and format (png) of output.
+
+Configuration:
+- place in the data/plugin/parser directory of the moinmoin storage directory
+- edit the variable wsd_url to point to the required server
+- restart server (if necessary, see http://moinmo.in/MoinDev/PluginConcept)
+
+Example usage (embed this in your wiki page):
+
+{{{
+#!websequencediagram
+Alice->Bob: password
+Bob->Alice: secret
+}}}
+
+v0.1: 25-July-2011.  Basic implementation displaying PNG
+
+@license: GNU GPL
+
+Inspired by GoogleChart.py (http://moinmo.in/ParserMarket/GoogleChart)
