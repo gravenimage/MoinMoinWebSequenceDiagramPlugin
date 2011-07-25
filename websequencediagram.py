@@ -45,7 +45,7 @@ def getSequenceDiagram( text, style = 'default' ):
     f = urllib.urlopen(wsd_url, url)
     line = f.readline()
     f.close()
-    print line
+
     # line contains e.g.
     # {"img": "?png=mscKTO107", "errors": []}
 
